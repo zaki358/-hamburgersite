@@ -1,2 +1,3 @@
 # hamburgersite
 2月18日、ハンバーガーサイト作成始動
+branch名がmasterからmainに変わってる
