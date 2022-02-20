@@ -1,0 +1,13 @@
+//---foundation---//
+@use "foundation/reset";
+@use "foundation/base";
+@use "foundation/mixin";
+@use "foundation/variables";
+
+//---layout---//
+@use "layout/header";
+@use "layout/main";
+@use "layout/sidebar";
+@use "layout/footer";
+
+//---component---//
