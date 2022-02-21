@@ -1,0 +1,5 @@
+//---レスポンシブ---//
+$breakpoints: (
+    "tab": "screen and (min-width: 376px)",
+    "pc": "screen and (min-width: 835px)",
+) !default;

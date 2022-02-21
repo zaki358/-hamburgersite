@@ -1,13 +1,15 @@
 //---foundation---//
 @use "foundation/reset";
 @use "foundation/base";
-@use "foundation/mixin";
-@use "foundation/variables";
 
 //---layout---//
-@use "layout/header";
+@use "layout/header" as layout;
 @use "layout/main";
 @use "layout/sidebar";
 @use "layout/footer";
 
 //---component---//
+@use "object/component/form";
+
+//---project---//
+@use "object/project/header" as project;

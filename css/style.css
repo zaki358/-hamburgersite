@@ -76,13 +76,32 @@ select {
   }
 }
 .l-header {
-  background-color: #FFF7EF;
+  background-color: #fff7ef;
   height: 217px;
   width: 100%;
 }
 @media screen and (min-width: 835px) {
   .l-header {
     width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.p-header__title {
+  font-family: "Roboto", sans-serif;
+  color: #707070;
+  font-size: 40px;
+  margin: auto;
+  width: 203px;
+  height: 53px;
+}
+@media screen and (min-width: 835px) {
+  .p-header__title {
+    font-size: 64px;
+    width: 325px;
+    height: 84px;
   }
 }
 /*# sourceMappingURL=style.css.map */

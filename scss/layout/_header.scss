@@ -1,8 +1,14 @@
-.l-header{
-    background-color: #FFF7EF;
+//@forward "../foundation/variables";
+@use  "../foundation/mixin" ;
+
+.l-header {
+    background-color: #fff7ef;
     height: 217px;
     width: 100%;
-    @media screen and (min-width: 835px){
+    @include mixin.media("pc") { 
         width: 80%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
     }
 }
