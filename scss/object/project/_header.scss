@@ -1,5 +1,5 @@
 //@forward "../foundation/variables";
-@use  "../../foundation/mixin" ;
+@use "../../foundation/mixin";
 
 .p-header__title {
     font-family: "Roboto", sans-serif;
@@ -8,9 +8,37 @@
     margin: auto;
     width: 203px;
     height: 53px;
+    //margin-top: 47px;
     @include mixin.media("pc") {
         font-size: 64px;
+        margin-left: 65px;
         width: 325px;
         height: 84px;
+        //margin-top: 0;
     }
+}
+.p-header__form {
+    width: 545px;
+    height: 46px;
+    //margin-top: 38px;
+    @include mixin.media("pc") {
+    margin-right: 31px;
+    //margin-top: 0;
+    }
+}
+
+.p-header__form__text {
+    width: 73%;
+    height: 100%;
+    outline-color: #707070;
+    border-radius: 10px;
+}
+
+.p-header__form__submit {
+    width: 25%;
+    height: 100%;
+    outline-color: #707070;
+    border-radius: 10px;
+    font-weight: bold;
+    color: #707070;
 }

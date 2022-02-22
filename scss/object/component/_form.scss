@@ -1,0 +1,16 @@
+@use "../../foundation/mixin";
+
+.c-form-header {
+    display: block;
+    margin: auto;
+    @include mixin.media("pc") {
+        margin: 0;
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.c-form-header__text {
+    //border-radius: 11px;
+    //outline: solid 2px #707070;
+}
