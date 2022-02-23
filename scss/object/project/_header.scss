@@ -1,40 +1,48 @@
 @use "../../foundation/mixin";
+@use "../../foundation/function";
+@use "../../foundation/variables";
 
 //ヘッダータイトル（Hamburger）//
 .p-header__title {
     font-family: "Roboto", sans-serif;
     color: #707070;
     font-size: 40px;
-    margin: auto;
-    width: 203px;
-    height: 53px;
-    margin-top: 47px;
+    display: inline-block;
+    margin-top: 40px;
     @include mixin.media("pc") {
         font-size: 64px;
         margin-left: 65px;
-        width: 325px;
-        height: 84px;
-        //margin-top: 0;
+        margin-top: 0;
     }
 }
 
 //ヘッダーフォーム部//
 .p-header__form {
-    width: 545px;
-    height: 45px;
+    width: 65vw;
+    height: 46px;
+    min-width: 320px;
+    display: inline-block;
     margin-top: 38px;
+    @include mixin.media("tab") {
+        width: function.tvw(546);
+        height: 45px;
+    }
     @include mixin.media("pc") {
-    margin-right: 31px;
-    margin-top: 0;
+        min-width: auto;
+        width: function.pvw(545);
+        margin-right: 31px;
+        margin-top: 0;
     }
 }
 
 //ヘッダーフォーム部（テキスト入力部）//
 .p-header__form__text {
-    width: 73%;
+    width: 72%;
     height: 100%;
     outline-color: #707070;
     border-radius: 10px;
+    @include mixin.media("pc") {
+    }
 }
 
 //ヘッダーフォーム部（送信ボタン部）//
@@ -45,10 +53,18 @@
     border-radius: 10px;
     font-weight: bold;
     color: #707070;
+    @include mixin.media("pc") {
+    }
 }
 
-.p-header__text{
-    display: block;
+.p-header__text {
+    display: inline-block;
+    font-family: "Roboto", sans-serif;
+    color: #707070;
+    font-size: function.tvw(34);
+    position: absolute;
+    top: 5px;
+    left: 87%;
     @include mixin.media("pc") {
         display: none;
     }

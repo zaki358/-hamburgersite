@@ -1,12 +1,14 @@
 @use "../../foundation/mixin";
 
+
+//↓現状使用していない//
 //フォーム共通部//
 .c-form-header {
-    margin: auto;
+    //margin: 0 auto;
     @include mixin.media("pc") {
-        margin: 0;
-        display: flex;
-        justify-content: space-between;
+        //margin: 0;
+        //display: flex;
+        //justify-content: space-between;
     }
 }
 
