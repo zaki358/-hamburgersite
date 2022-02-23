@@ -1,6 +1,6 @@
-//@forward "../foundation/variables";
 @use "../../foundation/mixin";
 
+//ヘッダータイトル（Hamburger）//
 .p-header__title {
     font-family: "Roboto", sans-serif;
     color: #707070;
@@ -17,6 +17,8 @@
         //margin-top: 0;
     }
 }
+
+//ヘッダーフォーム部//
 .p-header__form {
     width: 545px;
     height: 46px;
@@ -27,6 +29,7 @@
     }
 }
 
+//ヘッダーフォーム部（テキスト入力部）//
 .p-header__form__text {
     width: 73%;
     height: 100%;
@@ -34,6 +37,7 @@
     border-radius: 10px;
 }
 
+//ヘッダーフォーム部（送信ボタン部）//
 .p-header__form__submit {
     width: 25%;
     height: 100%;
@@ -41,4 +45,10 @@
     border-radius: 10px;
     font-weight: bold;
     color: #707070;
+}
+
+.p-header__text{
+    @include mixin.media("pc") {
+        display: none;
+    }
 }

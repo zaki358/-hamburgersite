@@ -1,5 +1,6 @@
 @use "../../foundation/mixin";
 
+//フォーム共通部//
 .c-form-header {
     display: block;
     margin: auto;
@@ -10,7 +11,12 @@
     }
 }
 
-.c-form-header__text {
-    //border-radius: 11px;
-    //outline: solid 2px #707070;
+//フォームテキスト共通部//
+.c-form-header__text{
+
+}
+
+//フォームsubmit共通部//
+.c-form-header__submit{
+
 }

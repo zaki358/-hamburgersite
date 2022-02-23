@@ -76,6 +76,7 @@ select {
   }
 }
 .l-header {
+  position: relative;
   background-color: #fff7ef;
   height: 217px;
   width: 100%;
@@ -142,5 +143,11 @@ select {
   border-radius: 10px;
   font-weight: bold;
   color: #707070;
+}
+
+@media screen and (min-width: 835px) {
+  .p-header__text {
+    display: none;
+  }
 }
 /*# sourceMappingURL=style.css.map */
