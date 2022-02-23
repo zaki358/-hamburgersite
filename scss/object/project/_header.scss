@@ -8,7 +8,7 @@
     margin: auto;
     width: 203px;
     height: 53px;
-    //margin-top: 47px;
+    margin-top: 47px;
     @include mixin.media("pc") {
         font-size: 64px;
         margin-left: 65px;
@@ -21,11 +21,11 @@
 //ヘッダーフォーム部//
 .p-header__form {
     width: 545px;
-    height: 46px;
-    //margin-top: 38px;
+    height: 45px;
+    margin-top: 38px;
     @include mixin.media("pc") {
     margin-right: 31px;
-    //margin-top: 0;
+    margin-top: 0;
     }
 }
 
@@ -48,6 +48,7 @@
 }
 
 .p-header__text{
+    display: block;
     @include mixin.media("pc") {
         display: none;
     }

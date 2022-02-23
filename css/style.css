@@ -84,6 +84,7 @@ select {
 @media screen and (min-width: 835px) {
   .l-header {
     width: 80%;
+    height: 217px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -91,7 +92,6 @@ select {
 }
 
 .c-form-header {
-  display: block;
   margin: auto;
 }
 @media screen and (min-width: 835px) {
@@ -109,6 +109,7 @@ select {
   margin: auto;
   width: 203px;
   height: 53px;
+  margin-top: 47px;
 }
 @media screen and (min-width: 835px) {
   .p-header__title {
@@ -121,11 +122,13 @@ select {
 
 .p-header__form {
   width: 545px;
-  height: 46px;
+  height: 45px;
+  margin-top: 38px;
 }
 @media screen and (min-width: 835px) {
   .p-header__form {
     margin-right: 31px;
+    margin-top: 0;
   }
 }
 
@@ -145,6 +148,9 @@ select {
   color: #707070;
 }
 
+.p-header__text {
+  display: block;
+}
 @media screen and (min-width: 835px) {
   .p-header__text {
     display: none;

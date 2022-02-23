@@ -2,7 +2,6 @@
 
 //フォーム共通部//
 .c-form-header {
-    display: block;
     margin: auto;
     @include mixin.media("pc") {
         margin: 0;
