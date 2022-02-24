@@ -3,12 +3,15 @@
 
 //variables.$baseWidth
 
+
+@function svw($spVw){
+   @return (math.div($spVw,variables.$spWidth) * 100vw);
+}
+
 @function tvw($tabVw){
-   // @return $pixelsVw / variables.$baseWidth * 100vw;
    @return (math.div($tabVw,variables.$tabWidth) * 100vw);
 }
 
 @function pvw($pcVw){
-    // @return $pixelsVw / variables.$baseWidth * 100vw;
     @return (math.div($pcVw,variables.$pcWidth) * 100vw);
  }
