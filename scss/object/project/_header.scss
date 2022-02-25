@@ -8,13 +8,10 @@
     color: #707070;
     display: inline-block;
     margin-top: 40px;
-    //font-size: function.svw(40);
     font-size: 40px;
     @include mixin.media("tab") {
-        //font-size: function.tvw(40);
     }
     @include mixin.media("pc") {
-        //font-size: function.pvw(64);
         font-size: 64px;
         margin-left: 65px;
         margin-top: 0;
@@ -40,46 +37,24 @@
 }
 
 //ヘッダーフォーム部（テキスト入力部)ブロック要素(疑似要素使用のため)//
-.p-header__form__icon{
+.p-header__form__search {
     display: inline-block;
     position: relative;
     width: 72%;
     height: 100%;
-    &::before{
+    &::before {
         content: url(../../../img/header_form_text_icon.svg);
         position: absolute;
         top: 25%;
         left: 10px;
         z-index: 100;
-        display: inline-block;
         vertical-align: text-top;
         width: 1.5rem;
         height: 1.5rem;
     }
 }
-//ヘッダーフォーム部（テキスト入力部）//
-.p-header__form__text {
-    padding-left:2.5rem;
-    width: 100%;
-    height: 100%;
-    outline-color: #707070;
-    border-radius: 10px;
-}
 
-
-//ヘッダーフォーム部（送信ボタン部）//
-.p-header__form__submit {
-    width: 25%;
-    height: 100%;
-    outline-color: #707070;
-    border-radius: 10px;
-    font-weight: bold;
-    color: #707070;
-    @include mixin.media("pc") {
-    }
-}
-
-//ヘッダーテキスト部//
+//ヘッダーテキスト部（右上）単体パーツで流用不可と判断したたprojectで使用//
 .p-header__text {
     font-family: "Roboto", sans-serif;
     color: #707070;
@@ -87,10 +62,8 @@
     position: absolute;
     top: 5px;
     left: 82%; //308 / 375//
-    //font-size: function.svw(20);
     font-size: 20px;
     @include mixin.media("tab") {
-        //font-size: function.tvw(34);
         font-size: 34px;
         left: 87%;
     }

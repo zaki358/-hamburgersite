@@ -1,23 +1,19 @@
 @use "../../foundation/mixin";
+@use "../../foundation/function";
+@use "../../foundation/variables";
 
-
-//↓現状使用していない//
-//フォーム共通部//
-.c-form-header {
-    //margin: 0 auto;
-    @include mixin.media("pc") {
-        //margin: 0;
-        //display: flex;
-        //justify-content: space-between;
-    }
-}
-
-//フォームテキスト共通部//
 .c-form-header__text{
-
+    padding-left:2.5rem;
+    outline-color: #707070;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
 }
-
-//フォームsubmit共通部//
-.c-form-header__submit{
-
+.c-form-header__submit {
+    width: 25%;
+    height: 100%;
+    outline-color: #707070;
+    border-radius: 10px;
+    font-weight: bold;
+    color: #707070;
 }
