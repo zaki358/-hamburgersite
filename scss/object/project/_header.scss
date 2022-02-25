@@ -4,9 +4,7 @@
 
 //ヘッダータイトル（Hamburger）//
 .p-header__title {
-    font-family: "Roboto", sans-serif;
     color: #707070;
-    display: inline-block;
     margin-top: 40px;
     font-size: 40px;
     @include mixin.media("tab") {
@@ -55,7 +53,7 @@
 }
 
 //ヘッダーテキスト部（右上）単体パーツで流用不可と判断したたprojectで使用//
-.p-header__text {
+.p-header__btn {
     font-family: "Roboto", sans-serif;
     color: #707070;
     display: inline-block;

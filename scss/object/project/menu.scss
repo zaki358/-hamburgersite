@@ -1,0 +1,26 @@
+@use "../../foundation/mixin";
+@use "../../foundation/function";
+@use "../../foundation/variables";
+
+.p-menu-sidebar__title {
+    @include mixin.media("pc") {
+        font-family: "Roboto", sans-serif;
+        color: #707070;
+        font-size: 34px;
+        display: inline-block;
+        margin-left: 46px;
+        margin-top: 82px;
+    }
+}
+
+.p-menu__title {
+    color: #707070;
+    font-size: 24px;
+    margin-left: 46px;
+    margin-top: 85px;
+}
+
+.p-menu__list{
+    margin-top: 40px;
+}
+

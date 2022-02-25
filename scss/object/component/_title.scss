@@ -1,0 +1,16 @@
+@use "../../foundation/mixin";
+@use "../../foundation/function";
+@use "../../foundation/variables";
+
+.c-title-header{
+    font-family: "Roboto", sans-serif;
+    display: inline-block;
+}
+
+.c-title-sidebar{
+    display: none;
+}
+
+.c-title-menu{
+    font-weight: bold;
+}
