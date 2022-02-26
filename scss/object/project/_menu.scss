@@ -2,7 +2,34 @@
 @use "../../foundation/function";
 @use "../../foundation/variables";
 
-.p-menu-sidebar__title {
+.p-menu {
+    background-color: #f2ede9;
+    position: absolute;
+    height: auto;
+    width: 44%;
+    left: 56%;
+    top: 0;
+    z-index: 100;
+    @include mixin.media("pc") {
+        left: 0;
+        width: 100%;
+    }
+}
+
+//.p-sidebar{
+//background-color: rgba(0,0,0,0.3);
+//position: absolute;
+//left: 20%;
+ //   top: 0;
+//width: 100%;
+//height: 100%;
+//z-index: 90;
+//@include mixin.media("pc"){
+//    display: none;
+//// }
+//}
+
+.p-menu--sidebar__title {
     @include mixin.media("pc") {
         font-family: "Roboto", sans-serif;
         color: #707070;
@@ -20,7 +47,15 @@
     margin-top: 85px;
 }
 
-.p-menu__list{
+.p-menu__list {
     margin-top: 40px;
 }
 
+.p-menu__btn {
+    position: absolute;
+    top: 1.5%;
+    left: 85%;
+    @include mixin.media("pc") {
+        display: none;
+    }
+}

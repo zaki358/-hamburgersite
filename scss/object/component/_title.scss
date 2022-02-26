@@ -2,15 +2,15 @@
 @use "../../foundation/function";
 @use "../../foundation/variables";
 
-.c-title-header{
+.c-title--header{
     font-family: "Roboto", sans-serif;
     display: inline-block;
 }
 
-.c-title-sidebar{
+.c-title--sidebar{
     display: none;
 }
 
-.c-title-menu{
+.c-title--menu{
     font-weight: bold;
 }

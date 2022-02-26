@@ -54,12 +54,9 @@
 
 //ヘッダーテキスト部（右上）単体パーツで流用不可と判断したたprojectで使用//
 .p-header__btn {
-    font-family: "Roboto", sans-serif;
-    color: #707070;
-    display: inline-block;
-    position: absolute;
     top: 5px;
     left: 82%; //308 / 375//
+    color: #707070;
     font-size: 20px;
     @include mixin.media("tab") {
         font-size: 34px;

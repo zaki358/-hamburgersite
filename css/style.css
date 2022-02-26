@@ -96,15 +96,20 @@ select {
 }
 
 #sidebar {
-  width: 20%;
+  width: 100%;
   height: auto;
   position: absolute;
   top: 0;
-  left: 80%;
-  background-color: #F2EDE9;
+  left: 0;
+}
+@media screen and (min-width: 1025px) {
+  #sidebar {
+    width: 20%;
+    left: 80%;
+  }
 }
 
-.c-form-header__text {
+.c-form--header__text {
   padding-left: 2.5rem;
   outline-color: #707070;
   width: 100%;
@@ -112,7 +117,7 @@ select {
   border-radius: 10px;
 }
 
-.c-form-header__submit {
+.c-form--header__submit {
   width: 25%;
   height: 100%;
   outline-color: #707070;
@@ -121,7 +126,7 @@ select {
   color: #707070;
 }
 
-.c-list-menu__text {
+.c-list--menu__text {
   list-style: none;
   color: #707070;
   font-size: 20px;
@@ -129,17 +134,23 @@ select {
   margin-top: 23px;
 }
 
-.c-title-header {
+.c-title--header {
   font-family: "Roboto", sans-serif;
   display: inline-block;
 }
 
-.c-title-sidebar {
+.c-title--sidebar {
   display: none;
 }
 
-.c-title-menu {
+.c-title--menu {
   font-weight: bold;
+}
+
+.c-btn--header {
+  font-family: "Roboto", sans-serif;
+  display: inline-block;
+  position: absolute;
 }
 
 .p-header__title {
@@ -194,12 +205,9 @@ select {
 }
 
 .p-header__btn {
-  font-family: "Roboto", sans-serif;
-  color: #707070;
-  display: inline-block;
-  position: absolute;
   top: 5px;
   left: 82%;
+  color: #707070;
   font-size: 20px;
 }
 @media screen and (min-width: 600px) {
@@ -214,8 +222,24 @@ select {
   }
 }
 
+.p-menu {
+  background-color: #f2ede9;
+  position: absolute;
+  height: auto;
+  width: 44%;
+  left: 56%;
+  top: 0;
+  z-index: 100;
+}
 @media screen and (min-width: 1025px) {
-  .p-menu-sidebar__title {
+  .p-menu {
+    left: 0;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .p-menu--sidebar__title {
     font-family: "Roboto", sans-serif;
     color: #707070;
     font-size: 34px;
@@ -234,5 +258,16 @@ select {
 
 .p-menu__list {
   margin-top: 40px;
+}
+
+.p-menu__btn {
+  position: absolute;
+  top: 1.5%;
+  left: 85%;
+}
+@media screen and (min-width: 1025px) {
+  .p-menu__btn {
+    display: none;
+  }
 }
 /*# sourceMappingURL=style.css.map */
