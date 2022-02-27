@@ -127,8 +127,8 @@ select {
 }
 
 .c-list--menu__text {
+  text-decoration: none;
   list-style: none;
-  color: #707070;
   font-size: 20px;
   margin-left: 26px;
   margin-top: 23px;
@@ -151,6 +151,19 @@ select {
   font-family: "Roboto", sans-serif;
   display: inline-block;
   position: absolute;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  padding: 0;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+
+.c-link--menu {
+  text-decoration: none;
+  color: #707070;
 }
 
 .p-header__title {
