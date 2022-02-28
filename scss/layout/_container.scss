@@ -1,0 +1,13 @@
+@use "../foundation/mixin";
+
+#l-container {
+    height: 100vh;
+    gap: 0;
+    box-sizing: border-box;
+    //display: block;
+    @include mixin.media("pc") {
+        display: grid;
+        grid-template-rows: 217px 1fr 150px;
+        grid-template-columns: 1fr 20%;
+    }
+}

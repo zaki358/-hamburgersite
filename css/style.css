@@ -75,20 +75,31 @@ select {
     scroll-behavior: auto !important;
   }
 }
+#l-container {
+  height: 100vh;
+  gap: 0;
+  box-sizing: border-box;
+}
+@media screen and (min-width: 1025px) {
+  #l-container {
+    display: grid;
+    grid-template-rows: 217px 1fr 150px;
+    grid-template-columns: 1fr 20%;
+  }
+}
+
 .l-header {
-  position: relative;
-  overflow: hidden;
   background-color: #fff7ef;
-  height: 217px;
   width: 100%;
+  height: 217px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 @media screen and (min-width: 1025px) {
   .l-header {
-    width: 80%;
-    height: 217px;
+    grid-row: 1;
+    grid-column: 1/2;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
@@ -97,15 +108,20 @@ select {
 
 #sidebar {
   width: 100%;
-  height: auto;
-  position: absolute;
-  top: 0;
-  left: 0;
+  height: 100%;
+  position: fixed;
+  top: 0px;
+  left: 100%;
+  z-index: 100;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 @media screen and (min-width: 1025px) {
   #sidebar {
-    width: 20%;
-    left: 80%;
+    position: static;
+    left: 0;
+    display: block;
+    grid-row: 1/3;
+    grid-column: 2;
   }
 }
 
@@ -137,20 +153,41 @@ select {
 .c-title--header {
   font-family: "Roboto", sans-serif;
   display: inline-block;
+  color: #707070;
+  margin-top: 40px;
+  font-size: 40px;
+}
+@media screen and (min-width: 1025px) {
+  .c-title--header {
+    font-size: 64px;
+    margin-left: 65px;
+    margin-top: 0;
+  }
 }
 
 .c-title--sidebar {
   display: none;
 }
+@media screen and (min-width: 1025px) {
+  .c-title--sidebar {
+    font-family: "Roboto", sans-serif;
+    color: #707070;
+    font-size: 34px;
+    display: inline-block;
+    margin-left: 46px;
+    margin-top: 82px;
+  }
+}
 
 .c-title--menu {
   font-weight: bold;
+  color: #707070;
+  font-size: 24px;
+  margin-left: 46px;
+  margin-top: 85px;
 }
 
 .c-btn--header {
-  font-family: "Roboto", sans-serif;
-  display: inline-block;
-  position: absolute;
   background-color: transparent;
   border: none;
   cursor: pointer;
@@ -159,24 +196,48 @@ select {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
+  font-family: "Roboto", sans-serif;
+  display: inline-block;
+  position: absolute;
+  top: 5px;
+  left: 82%;
+  color: #707070;
+  font-size: 20px;
+}
+@media screen and (min-width: 600px) {
+  .c-btn--header {
+    font-size: 34px;
+    left: 87%;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .c-btn--header {
+    display: none;
+  }
+}
+
+.c-btn--menu {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  padding: 0;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  position: absolute;
+  top: 1.5%;
+  left: 85%;
+}
+@media screen and (min-width: 1025px) {
+  .c-btn--menu {
+    display: none;
+  }
 }
 
 .c-link--menu {
   text-decoration: none;
   color: #707070;
-}
-
-.p-header__title {
-  color: #707070;
-  margin-top: 40px;
-  font-size: 40px;
-}
-@media screen and (min-width: 1025px) {
-  .p-header__title {
-    font-size: 64px;
-    margin-left: 65px;
-    margin-top: 0;
-  }
 }
 
 .p-header__form {
@@ -217,24 +278,6 @@ select {
   height: 1.5rem;
 }
 
-.p-header__btn {
-  top: 5px;
-  left: 82%;
-  color: #707070;
-  font-size: 20px;
-}
-@media screen and (min-width: 600px) {
-  .p-header__btn {
-    font-size: 34px;
-    left: 87%;
-  }
-}
-@media screen and (min-width: 1025px) {
-  .p-header__btn {
-    display: none;
-  }
-}
-
 .p-menu {
   background-color: #f2ede9;
   position: absolute;
@@ -246,41 +289,13 @@ select {
 }
 @media screen and (min-width: 1025px) {
   .p-menu {
+    position: initial;
     left: 0;
     width: 100%;
   }
 }
 
-@media screen and (min-width: 1025px) {
-  .p-menu--sidebar__title {
-    font-family: "Roboto", sans-serif;
-    color: #707070;
-    font-size: 34px;
-    display: inline-block;
-    margin-left: 46px;
-    margin-top: 82px;
-  }
-}
-
-.p-menu__title {
-  color: #707070;
-  font-size: 24px;
-  margin-left: 46px;
-  margin-top: 85px;
-}
-
 .p-menu__list {
   margin-top: 40px;
-}
-
-.p-menu__btn {
-  position: absolute;
-  top: 1.5%;
-  left: 85%;
-}
-@media screen and (min-width: 1025px) {
-  .p-menu__btn {
-    display: none;
-  }
 }
 /*# sourceMappingURL=style.css.map */

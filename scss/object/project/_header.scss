@@ -2,20 +2,6 @@
 @use "../../foundation/function";
 @use "../../foundation/variables";
 
-//ヘッダータイトル（Hamburger）//
-.p-header__title {
-    color: #707070;
-    margin-top: 40px;
-    font-size: 40px;
-    @include mixin.media("tab") {
-    }
-    @include mixin.media("pc") {
-        font-size: 64px;
-        margin-left: 65px;
-        margin-top: 0;
-    }
-}
-
 //ヘッダーフォーム部//
 .p-header__form {
     display: inline-block;
@@ -52,17 +38,3 @@
     }
 }
 
-//ヘッダーテキスト部（右上）単体パーツで流用不可と判断したたprojectで使用//
-.p-header__btn {
-    top: 5px;
-    left: 82%; //308 / 375//
-    color: #707070;
-    font-size: 20px;
-    @include mixin.media("tab") {
-        font-size: 34px;
-        left: 87%;
-    }
-    @include mixin.media("pc") {
-        display: none;
-    }
-}

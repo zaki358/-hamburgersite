@@ -1,20 +1,17 @@
-//@forward "../foundation/variables";
 @use "../foundation/mixin";
 
 .l-header {
-    position: relative;
-    overflow: hidden;
     background-color: #fff7ef;
-    height: 217px;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    width           : 100%;
+    height          : 217px;
+    display         : flex;
+    flex-direction  : column;
+    align-items     : center;
     @include mixin.media("pc") {
-        width: 80%;
-        height: 217px;
-        flex-direction: row;
+        grid-row       : 1;
+        grid-column    : 1/2;
+        flex-direction : row;
         justify-content: space-between;
-        align-items: center;
+        align-items    : center;
     }
 }

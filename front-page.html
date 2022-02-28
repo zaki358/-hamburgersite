@@ -18,54 +18,56 @@
 </head>
 
 <body>
-    <header class="l-header p-header">
-        <h1 class="c-title--header p-header__title">Hamburger</h1>
-        <form class="p-header__form">
-            <div class="p-header__form__search">
-                <!--projectで使用の場合 p-header__form__text-->
-                <input type="search" class="c-form--header__text">
-            </div>
-            <!--projectで使用の場合 p-header__form__submit-->
-            <input type="submit" value="検索" class="c-form--header__submit ">
-        </form>
-        <button class="p-header__btn c-btn--header">Menu</button>
-    </header>
+    <div id="l-container">
+        <header class="l-header p-header">
+            <h1 class="c-title--header">Hamburger</h1>
+            <form class="p-header__form">
+                <div class="p-header__form__search">
+                    <!--projectで使用の場合 p-header__form__text-->
+                    <input type="search" class="c-form--header__text">
+                </div>
+                <!--projectで使用の場合 p-header__form__submit-->
+                <input type="submit" value="検索" class="c-form--header__submit ">
+            </form>
+            <button class="c-btn--header js-menu--open">Menu</button>
+        </header>
 
-    <aside id="sidebar">
-        <nav class="p-menu">
-            <h2 class="c-title--sidebar p-menu--sidebar__title">Menu</h2>
-            <h3 class="c-title-menu p-menu__title">バーガー</h3>
-            <ul class="p-menu__list">
-                <li class="c-list--menu__text"><a href="" class="c-link--menu">ハンバーガー</a></li>
-                <li class="c-list--menu__text"><a href="" class="c-link--menu">チーズバーガー</a></li>
-                <li class="c-list--menu__text"><a href="" class="c-link--menu">テリヤキバーガー</a></li>
-                <li class="c-list--menu__text"><a href="" class="c-link--menu">アボカドバーガー</a></li>
-                <li class="c-list--menu__text"><a href="" class="c-link--menu">フィッシュバーガー</a></li>
-                <li class="c-list--menu__text"><a href="" class="c-link--menu">ベーコンバーガー</a></li>
-                <li class="c-list--menu__text"><a href="" class="c-link--menu">チキンバーガー</a></li>
-            </ul class="p-menu__list">
-            <h3 class="c-title--menu p-menu__title">サイド</h3>
-            <ul>
-                <li class="c-list--menu__text"><a href="" class="c-link--menu">ポテト</a></li>
-                <li class="c-list--menu__text"><a href="" class="c-link--menu">サラダ</a></li>
-                <li class="c-list--menu__text"><a href="" class="c-link--menu">ナゲット</a></li>
-                <li class="c-list--menu__text"><a href="" class="c-link--menu">コーン</a></li>
-            </ul>
-            <h3 class="c-title--menu p-menu__title">ドリンク</h3>
-            <ul class="p-menu__list">
-                <li class="c-list--menu__text"><a href="" class="c-link--menu">コーラ</a></li>
-                <li class="c-list--menu__text"><a href="" class="c-link--menu">ファンタ</a></li>
-                <li class="c-list--menu__text"><a href="" class="c-link--menu">オレンジ</a></li>
-                <li class="c-list--menu__text"><a href="" class="c-link--menu">アップル</a></li>
-                <li class="c-list--menu__text"><a href="" class="c-link--menu">紅茶(Ice/Hot)</a></li>
-                <li class="c-list--menu__text"><a href="" class="c-link--menu">コーヒー(Ice/Hot)</a></li>
-            </ul>
-            <div class="c-btn--menu p-menu__btn"><img src="../../../img/sidebar_menu_btn_icon.svg"></div>
-            <div class="p-sidebar"></div>
-        </nav>
-
-    </aside>
-
+        <aside id="sidebar">
+            <nav class="p-menu">
+                <!--projectで使用の場合  p-menu--sidebar__title-->
+                <h2 class="c-title--sidebar">Menu</h2>
+                <!--projectで使用の場合  p-menu__title-->
+                <h3 class="c-title--menu">バーガー</h3>
+                <ul class="p-menu__list">
+                    <li class="c-list--menu__text"><a href="" class="c-link--menu">ハンバーガー</a></li>
+                    <li class="c-list--menu__text"><a href="" class="c-link--menu">チーズバーガー</a></li>
+                    <li class="c-list--menu__text"><a href="" class="c-link--menu">テリヤキバーガー</a></li>
+                    <li class="c-list--menu__text"><a href="" class="c-link--menu">アボカドバーガー</a></li>
+                    <li class="c-list--menu__text"><a href="" class="c-link--menu">フィッシュバーガー</a></li>
+                    <li class="c-list--menu__text"><a href="" class="c-link--menu">ベーコンバーガー</a></li>
+                    <li class="c-list--menu__text"><a href="" class="c-link--menu">チキンバーガー</a></li>
+                </ul class="p-menu__list">
+                <h3 class="c-title--menu">サイド</h3>
+                <ul>
+                    <li class="c-list--menu__text"><a href="" class="c-link--menu">ポテト</a></li>
+                    <li class="c-list--menu__text"><a href="" class="c-link--menu">サラダ</a></li>
+                    <li class="c-list--menu__text"><a href="" class="c-link--menu">ナゲット</a></li>
+                    <li class="c-list--menu__text"><a href="" class="c-link--menu">コーン</a></li>
+                </ul>
+                <h3 class="c-title--menu">ドリンク</h3>
+                <ul class="p-menu__list">
+                    <li class="c-list--menu__text"><a href="" class="c-link--menu">コーラ</a></li>
+                    <li class="c-list--menu__text"><a href="" class="c-link--menu">ファンタ</a></li>
+                    <li class="c-list--menu__text"><a href="" class="c-link--menu">オレンジ</a></li>
+                    <li class="c-list--menu__text"><a href="" class="c-link--menu">アップル</a></li>
+                    <li class="c-list--menu__text"><a href="" class="c-link--menu">紅茶(Ice/Hot)</a></li>
+                    <li class="c-list--menu__text"><a href="" class="c-link--menu">コーヒー(Ice/Hot)</a></li>
+                </ul>
+                <!--projectで使用の場合 p-menu__btn-->
+                <button class="c-btn--menu js-menu--close"><img src="../../../img/sidebar_menu_btn_icon.svg"></button>
+            </nav>
+        </aside>
+    </div>
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/script.js"></script>
 </body>
