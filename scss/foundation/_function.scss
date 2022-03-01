@@ -1,8 +1,6 @@
 @use "variables";
 @use "sass:math";
 
-//variables.$baseWidth
-
 
 @function svw($spVw){
    @return (math.div($spVw,variables.$spWidth) * 100vw);

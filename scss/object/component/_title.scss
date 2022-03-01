@@ -3,36 +3,32 @@
 @use "../../foundation/variables";
 
 .c-title--header{
-    font-family: "Roboto", sans-serif;
-    display: inline-block;
-    color: #707070;
-    margin-top: 40px;
-    font-size: 40px;
-    @include mixin.media("tab") {
-    }
+    @include mixin.font-roboto;
+    display    : inline-block;
+    margin-top : 40px;
+    font-size  : 40px;
     @include mixin.media("pc") {
-        font-size: 64px;
+        font-size  : 64px;
         margin-left: 65px;
-        margin-top: 0;
+        margin-top : 0;
     }
 }
 
 .c-title--sidebar{
     display: none;
     @include mixin.media("pc") {
-        font-family: "Roboto", sans-serif;
-        color: #707070;
-        font-size: 34px;
-        display: inline-block;
+        @include mixin.font-roboto;
+        font-size  : 34px;
+        display    : inline-block;
         margin-left: 46px;
-        margin-top: 82px;
+        margin-top : 82px;
     }
 }
 
 .c-title--menu{
     font-weight: bold;
-    color: #707070;
-    font-size: 24px;
+    color      : #707070;
+    font-size  : 24px;
     margin-left: 46px;
-    margin-top: 85px;
+    margin-top : 85px;
 }
