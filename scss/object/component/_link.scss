@@ -1,4 +1,13 @@
-.c-link--menu{
+.c-link--menu {
     text-decoration: none;
-    color          : #707070;
+    color: #707070;
+}
+
+.c-link--card  {
+    display: inline-block;
+    text-decoration: none;
+    margin-left: 10px;
+    width: 63px;
+    height: 5px;
+    background: white;
 }

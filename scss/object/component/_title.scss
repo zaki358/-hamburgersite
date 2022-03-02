@@ -2,33 +2,69 @@
 @use "../../foundation/function";
 @use "../../foundation/variables";
 
-.c-title--header{
+.c-title--header {
     @include mixin.font-roboto;
-    display    : inline-block;
-    margin-top : 40px;
-    font-size  : 40px;
+    display: inline-block;
+    margin-top: 40px;
+    font-size: 40px;
     @include mixin.media("pc") {
-        font-size  : 64px;
+        font-size: 64px;
         margin-left: 65px;
-        margin-top : 0;
+        margin-top: 0;
     }
 }
 
-.c-title--sidebar{
+.c-title--sidebar {
     display: none;
     @include mixin.media("pc") {
         @include mixin.font-roboto;
-        font-size  : 34px;
-        display    : inline-block;
+        font-size: 34px;
+        display: inline-block;
         margin-left: 46px;
-        margin-top : 82px;
+        margin-top: 82px;
     }
 }
 
-.c-title--menu{
+.c-title--menu {
     font-weight: bold;
-    color      : #707070;
-    font-size  : 24px;
+    color: #707070;
+    font-size: 24px;
     margin-left: 46px;
-    margin-top : 85px;
+    margin-top: 85px;
 }
+
+.c-title--box {
+    color: white;
+    font-size: 3.6rem;
+    font-weight: bold;
+    padding-left: function.svw(25);
+    @include mixin.media("tab") {
+        padding-left: function.tvw(86);
+    }
+    @include mixin.media("pc") {
+        font-size: 4rem;
+        padding-left: function.pvw(87);
+        //padding-left: 85px;
+    }
+}
+
+.c-title--card{
+    font-family: "Roboto", sans-serif;
+    color: white;
+    padding-left: 10px;
+    padding-top: 12px;
+    font-size: 4.1rem;
+    @include mixin.media("tab"){
+        font-size: 4.4rem;
+    }
+    @include mixin.media("pc"){
+        font-size: 8rem;
+    }
+}
+
+//.c-title-card__item{
+//    margin-top:24px;
+//    margin-left: 5px;
+//    font-size: 2.2rem;
+//   font-weight: bold;
+//}

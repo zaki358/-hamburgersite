@@ -1,0 +1,57 @@
+@use "../../foundation/mixin";
+@use "../../foundation/function";
+@use "../../foundation/variables";
+
+.p-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @include mixin.media("tab") {
+        flex-direction: row;
+        justify-content: center;
+        align-items: stretch;
+    }
+}
+
+.p-card__left {
+    background-image: url(../../../img/main/front-page_card_img_left.png);
+    width: function.svw(335);
+    height: 642px;
+    background-position: center center;
+    background-size: cover;
+    @include mixin.media("tab") {
+        width: function.tvw(357);
+        height: 681px;
+    }
+    @include mixin.media("pc") {
+        width: function.pvw(625);
+        height: 1193px;
+    }
+}
+
+.p-card__right {
+    background-image: url(../../../img/main/front-page_card_img_right.png);
+    @extend .p-card__left;
+}
+
+.p-card__unit{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.p-card__item{
+    margin-top: 10px;
+    background-color: rgba($color: #ffffff, $alpha: 0.5);
+    width: function.svw(315);
+    height: 163px;
+    @include mixin.media("tab"){
+        width: function.tvw(334);
+    height: 172px;
+    }
+    @include mixin.media("pc"){
+        width: function.pvw(585);
+    height: 174px;
+    }
+    
+}

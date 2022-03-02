@@ -2,6 +2,7 @@
 
 #sidebar{
     @include mixin.media("pc") {
+        height: 100%;
         position: static;
         left       : 0;
         grid-row   : 1/3;

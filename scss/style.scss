@@ -11,7 +11,7 @@
 // ==========================================================================
 @use "layout/container";
 @use "layout/header" as layout;
-@use "layout/main";
+@use "layout/article";
 @use "layout/sidebar";
 @use "layout/footer";
 
@@ -33,6 +33,9 @@
 // -----------------------------------------------------------------
 @use "object/project/header" as project;
 @use "object/project/menu" ;
+@use "object/project/box" ;
+@use "object/project/card" ;
+@use "object/project/map" ;
 
 // -----------------------------------------------------------------
 // Utility

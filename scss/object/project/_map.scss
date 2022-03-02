@@ -1,0 +1,33 @@
+@use "../../foundation/mixin";
+@use "../../foundation/function";
+@use "../../foundation/variables";
+
+.p-map {
+    position: relative;
+    width: 100%;
+    height: 690px;
+    @include mixin.media("tab") {
+        height: 415px;
+    }
+    @include mixin.media("pc") {
+        height: 650px;
+    }
+}
+
+.p-map__item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    background-color: rgba($color: #000000, $alpha: 0.5);
+    height: 100%;
+    width: 100%;
+    @include mixin.media("tab") {
+        height: 100%;
+        width: 100%;
+    }
+    @include mixin.media("pc") {
+        height: 100%;
+        width: 950px;
+    }
+}
