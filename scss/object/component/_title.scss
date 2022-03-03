@@ -6,13 +6,13 @@
 
 .c-title--header {
     @include mixin.font-roboto;
-    display: inline-block;
+    display   : inline-block;
     margin-top: 40px;
-    font-size: 40px;
+    font-size : 40px;
     @include mixin.media("pc") {
-        font-size: 64px;
+        font-size  : 64px;
         margin-left: 65px;
-        margin-top: 0;
+        margin-top : 0;
     }
 }
 
@@ -20,42 +20,43 @@
     display: none;
     @include mixin.media("pc") {
         @include mixin.font-roboto;
-        font-size: 34px;
-        display: inline-block;
+        font-size  : 34px;
+        display    : inline-block;
         margin-left: 46px;
-        margin-top: 82px;
+        margin-top : 82px;
     }
 }
 
 .c-title--menu {
+    list-style : none;
     font-weight: bold;
-    color: #707070;
-    font-size: 24px;
+    color      : #707070;
+    font-size  : 24px;
     margin-left: 46px;
-    margin-top: 85px;
+    margin-top : 85px;
 }
 
 .c-title--box {
-    color: white;
-    font-size: 3.6rem;
-    font-weight: bold;
+    color       : white;
+    font-size   : 3.6rem;
+    font-weight : bold;
     padding-left: function.svw(25);
     @include mixin.media("tab") {
         padding-left: function.tvw(86);
     }
     @include mixin.media("pc") {
-        font-size: 4rem;
+        font-size   : 4rem;
         padding-left: function.pvw(87);
         //padding-left: 85px;
     }
 }
 
 .c-title--card {
-    font-family: "Roboto", sans-serif;
-    color: white;
+    font-family : "Roboto", sans-serif;
+    color       : white;
     padding-left: 10px;
-    padding-top: 12px;
-    font-size: 4.1rem;
+    padding-top : 12px;
+    font-size   : 4.1rem;
     @include mixin.media("tab") {
         font-size: 4.4rem;
     }
@@ -65,11 +66,11 @@
 }
 
 .c-title--card__item {
-    text-align: left;
-    color: #3C2A10;
-    font-size: 2.2rem;
+    text-align : left;
+    color      : #3C2A10;
+    font-size  : 2.2rem;
     font-weight: bold;
-    margin-top: 20px;
+    margin-top : 20px;
     margin-left:10px;
     @include mixin.media("tab") {
         font-size: 2.4rem;
@@ -79,12 +80,12 @@
 }
 
 .c-title--map{
-    position: relative;
-    text-align: left;
-    color: white;
-    font-size: 3.6rem;
+    position   : relative;
+    text-align : left;
+    color      : white;
+    font-size  : 3.6rem;
     font-weight: bold;
-    margin-top: 40px;
+    margin-top : 40px;
     @include mixin.media("tab") {}
     @include mixin.media("pc") {
         margin-top: 85px;
@@ -92,11 +93,11 @@
 }
 
 .c-title--map__border--white{
-    text-align: left;
-    width: 74px;
-    height: 2px;
+    text-align      : left;
+    width           : 74px;
+    height          : 2px;
     background-color: white;
-    margin-top: 20px;
+    margin-top      : 20px;
     @include mixin.media("tab") {}
     @include mixin.media("pc") {
         margin-top: 40px;
@@ -105,17 +106,17 @@
 }
 
 .c-title--footer__text__shop{
-    display: inline-block;
-    position: absolute;
-    top: calc(40px - 1rem);
-    color: white;
+    display  : inline-block;
+    position : absolute;
+    top      : calc(40px - 1rem);
+    color    : white;
     font-size: 2rem;
 }
 .c-title--footer__text__info{
-    display: inline-block;
-    position: absolute;
-    top: calc(100px - 0.7rem);
-    color: white;
+    display  : inline-block;
+    position : absolute;
+    top      : calc(100px - 0.7rem);
+    color    : white;
     font-size: 1.4rem;
 }
     

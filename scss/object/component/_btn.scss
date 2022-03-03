@@ -8,13 +8,14 @@
     font-family     : "Roboto", sans-serif;
     display         : inline-block;
     position        : absolute;
-    top             : 5px;
-    left            : 85%; //308 / 375//
+    top             : 3%;
+    //left            : 85%; //308 / 375//
+    left            :function.svw(325); 
     color           : #707070;
     font-size       : 20px;
     @include mixin.media("tab") {
         font-size: 34px;
-        left     : 85%;
+        left     : function.tvw(722);
     }
     @include mixin.media("pc") {
         display: none;
@@ -27,8 +28,11 @@
     width   : 32px;
     height  : 32px;
     position: absolute;
-    top     : 1.5%;
-    left    : 85%;
+    top     : 3%;
+    left    : function.svw(290);
+    @include mixin.media("tab"){
+        left:function.tvw(310);
+    }
     @include mixin.media("pc") {
         display: none;
     }

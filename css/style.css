@@ -245,6 +245,7 @@ ul, ol {
 }
 
 .c-title--menu {
+  list-style: none;
   font-weight: bold;
   color: #707070;
   font-size: 24px;
@@ -356,15 +357,15 @@ ul, ol {
   font-family: "Roboto", sans-serif;
   display: inline-block;
   position: absolute;
-  top: 5px;
-  left: 85%;
+  top: 3%;
+  left: 86.6666666667vw;
   color: #707070;
   font-size: 20px;
 }
 @media screen and (min-width: 600px) {
   .c-btn--header {
     font-size: 34px;
-    left: 85%;
+    left: 86.5707434053vw;
   }
 }
 @media screen and (min-width: 1025px) {
@@ -386,8 +387,13 @@ ul, ol {
   width: 32px;
   height: 32px;
   position: absolute;
-  top: 1.5%;
-  left: 85%;
+  top: 3%;
+  left: 77.3333333333vw;
+}
+@media screen and (min-width: 600px) {
+  .c-btn--menu {
+    left: 37.170263789vw;
+  }
 }
 @media screen and (min-width: 1025px) {
   .c-btn--menu {
@@ -525,7 +531,6 @@ body.is-open {
 }
 
 .p-card {
-  max-height: 1200px;
   position: relative;
   display: flex;
   flex-direction: column;
