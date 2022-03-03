@@ -1,4 +1,7 @@
 @use "../../foundation/mixin";
+@use "../../foundation/function";
+@use "../../foundation/variables";
+
 
 .u-margin--card {
     margin: 20px 0;
@@ -9,3 +12,14 @@
        margin: 111px 0;
    }
 }
+
+.u-margin__map{
+    margin-left: function.svw(40);
+    @include mixin.media("tab") {
+        margin-left: function.tvw(40);
+ }
+    @include mixin.media("pc") {
+       margin-left: function.pvw(135);
+   }
+}
+

@@ -172,6 +172,23 @@ ul, ol {
   }
 }
 
+#l-footer {
+  position: relative;
+  background-image: url(../../img/footer_img.png);
+  background-size: cover;
+  width: 100vw;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media screen and (min-width: 1025px) {
+  #l-footer {
+    grid-row: 3;
+    grid-column: 1/3;
+  }
+}
+
 .c-form--header__text {
   padding-left: 35px;
   font-size: 100%;
@@ -269,6 +286,62 @@ ul, ol {
   .c-title--card {
     font-size: 8rem;
   }
+}
+
+.c-title--card__item {
+  text-align: left;
+  color: #3C2A10;
+  font-size: 2.2rem;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-left: 10px;
+}
+@media screen and (min-width: 600px) {
+  .c-title--card__item {
+    font-size: 2.4rem;
+  }
+}
+.c-title--map {
+  position: relative;
+  text-align: left;
+  color: white;
+  font-size: 3.6rem;
+  font-weight: bold;
+  margin-top: 40px;
+}
+@media screen and (min-width: 1025px) {
+  .c-title--map {
+    margin-top: 85px;
+  }
+}
+
+.c-title--map__border--white {
+  text-align: left;
+  width: 74px;
+  height: 2px;
+  background-color: white;
+  margin-top: 20px;
+}
+@media screen and (min-width: 1025px) {
+  .c-title--map__border--white {
+    margin-top: 40px;
+  }
+}
+
+.c-title--footer__text__shop {
+  display: inline-block;
+  position: absolute;
+  top: calc(40px - 1rem);
+  color: white;
+  font-size: 2rem;
+}
+
+.c-title--footer__text__info {
+  display: inline-block;
+  position: absolute;
+  top: calc(100px - 0.7rem);
+  color: white;
+  font-size: 1.4rem;
 }
 
 .c-btn--header {
@@ -452,6 +525,8 @@ body.is-open {
 }
 
 .p-card {
+  max-height: 1200px;
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -465,6 +540,7 @@ body.is-open {
 }
 
 .p-card__left {
+  position: relative;
   background-image: url(../../../img/main/front-page_card_img_left.png);
   width: 89.3333333333vw;
   height: 642px;
@@ -487,17 +563,20 @@ body.is-open {
 }
 
 .p-card__right {
+  position: relative;
   background-image: url(../../../img/main/front-page_card_img_right.png);
   width: 89.3333333333vw;
   height: 642px;
   background-position: center center;
   background-size: cover;
+  margin-top: 16px;
 }
 @media screen and (min-width: 600px) {
   .p-card__right {
     width: 42.8057553957vw;
     height: 681px;
     margin-left: 20px;
+    margin-top: 0;
   }
 }
 @media screen and (min-width: 1025px) {
@@ -505,16 +584,29 @@ body.is-open {
     width: 32.5520833333vw;
     height: 1193px;
     margin-left: 40px;
+    margin-top: 0;
   }
 }
 
 .p-card__unit {
+  position: absolute;
+  top: 45%;
+  left: 0;
+  right: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+@media screen and (min-width: 1025px) {
+  .p-card__unit {
+    top: 68%;
+  }
+}
 
 .p-card__item {
+  text-align: center;
+  overflow-y: hidden;
+  position: relative;
   margin-top: 10px;
   background-color: rgba(255, 255, 255, 0.5);
   width: 84vw;
@@ -533,8 +625,30 @@ body.is-open {
   }
 }
 
+.p-card__item__comment {
+  display: inline-block;
+  text-align: left;
+  overflow-x: hidden;
+  color: #3C2A10;
+  font-size: 1.6rem;
+  width: 77.3333333333vw;
+  margin-top: 20px;
+}
+@media screen and (min-width: 600px) {
+  .p-card__item__comment {
+    width: 36.9304556355vw;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .p-card__item__comment {
+    margin-top: 26px;
+    width: 28.125vw;
+  }
+}
+
 .p-map {
   position: relative;
+  overflow-y: hidden;
   width: 100%;
   height: 690px;
 }
@@ -567,7 +681,27 @@ body.is-open {
 @media screen and (min-width: 1025px) {
   .p-map__item {
     height: 100%;
-    width: 950px;
+    width: 49.4791666667vw;
+  }
+}
+
+.p-map__comment {
+  display: inline-block;
+  overflow-x: hidden;
+  color: white;
+  font-size: 1.4rem;
+  width: 78.6666666667vw;
+  margin-top: 20px;
+}
+@media screen and (min-width: 600px) {
+  .p-map__comment {
+    width: 91.4868105516vw;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .p-map__comment {
+    width: 36.3020833333vw;
+    margin-top: 40px;
   }
 }
 
@@ -582,6 +716,20 @@ body.is-open {
 @media screen and (min-width: 1025px) {
   .u-margin--card {
     margin: 111px 0;
+  }
+}
+
+.u-margin__map {
+  margin-left: 10.6666666667vw;
+}
+@media screen and (min-width: 600px) {
+  .u-margin__map {
+    margin-left: 4.7961630695vw;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .u-margin__map {
+    margin-left: 7.03125vw;
   }
 }
 /*# sourceMappingURL=style.css.map */
