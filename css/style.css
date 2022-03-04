@@ -705,6 +705,7 @@ body.is-open {
 }
 @media screen and (min-width: 1025px) {
   .p-map__comment {
+    font-size: 1.6rem;
     width: 36.3020833333vw;
     margin-top: 40px;
   }

@@ -46,6 +46,7 @@
         width: function.tvw(763);
     }
     @include mixin.media("pc") {
+        font-size : 1.6rem;
         width     : function.pvw(697);
         margin-top: 40px;
     }
