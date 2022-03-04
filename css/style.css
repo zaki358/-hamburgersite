@@ -359,6 +359,15 @@ ul, ol {
   font-size: 1.6rem;
   font-weight: bold;
 }
+.c-title--archive-description {
+  font-size: 2.8rem;
+  font-weight: bold;
+}
+@media screen and (min-width: 600px) {
+  .c-title--archive-description {
+    font-size: 3.6rem;
+  }
+}
 .c-btn--header {
   background-color: transparent;
   border: none;
@@ -714,7 +723,7 @@ body.is-open {
 .p-archive-box_title {
   position: absolute;
   top: calc(50% - 50px);
-  left: 10%;
+  left: 6.6666666667vw;
   z-index: 101;
   color: white;
   display: flex;
@@ -724,7 +733,27 @@ body.is-open {
   .p-archive-box_title {
     flex-direction: row;
     align-items: center;
+    left: 10.3117505995vw;
   }
+}
+@media screen and (min-width: 1025px) {
+  .p-archive-box_title {
+    left: 4.53125vw;
+  }
+}
+
+.p-archive-description {
+  padding: 30px 5.8666666667vw;
+  width: 100vw;
+  height: 395px;
+  color: #3C2A10;
+}
+.p-archive-description__text {
+  overflow-x: hidden;
+  overflow-y: hidden;
+  margin-top: 30px;
+  width: 89.3333333333vw;
+  height: 276px;
 }
 .p-map {
   position: relative;

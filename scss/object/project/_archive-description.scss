@@ -1,0 +1,22 @@
+@use "../../foundation/mixin";
+@use "../../foundation/function";
+@use "../../foundation/variables";
+
+.p-archive-description {
+    padding: 30px function.svw(22);
+    width  : 100vw;
+    height : 395px;
+    color  : #3C2A10;
+    @include mixin.media("tab") {}
+    @include mixin.media("pc") {}
+}
+
+.p-archive-description__text {
+    overflow-x: hidden;
+    overflow-y: hidden;
+    margin-top: 30px;
+    width     : function.svw(335);
+    height    : 276px;
+    @include mixin.media("tab") {}
+    @include mixin.media("pc") {}
+}

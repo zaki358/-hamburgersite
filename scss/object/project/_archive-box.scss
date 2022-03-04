@@ -45,7 +45,7 @@
 .p-archive-box_title{
     position             : absolute;
     top                  : calc(50% - 50px);
-    left                 : 10%;
+    left                 : function.svw(25);
     z-index              : 101;
     color                : white;
     display              : flex;
@@ -53,6 +53,9 @@
     @include mixin.media("tab"){
         flex-direction     : row;
         align-items        : center;
+        left               : function.tvw(86);
     }
-    @include mixin.media("pc"){}
+    @include mixin.media("pc"){
+        left: function.pvw(87);
+    }
 }
