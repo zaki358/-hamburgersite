@@ -702,7 +702,7 @@ body.is-open {
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 100;
+  z-index: 10;
   width: 100vw;
   height: 285px;
   background-color: rgba(0, 0, 0, 0.5);
@@ -724,7 +724,7 @@ body.is-open {
   position: absolute;
   top: calc(50% - 50px);
   left: 6.6666666667vw;
-  z-index: 101;
+  z-index: 11;
   color: white;
   display: flex;
   flex-direction: column;
