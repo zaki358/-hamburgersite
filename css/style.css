@@ -253,25 +253,25 @@ ul, ol {
   margin-top: 85px;
 }
 
-.c-title--box {
+.c-title--front-box {
   color: white;
   font-size: 3.6rem;
   font-weight: bold;
   padding-left: 6.6666666667vw;
 }
 @media screen and (min-width: 600px) {
-  .c-title--box {
+  .c-title--front-box {
     padding-left: 10.3117505995vw;
   }
 }
 @media screen and (min-width: 1025px) {
-  .c-title--box {
+  .c-title--front-box {
     font-size: 4rem;
     padding-left: 4.53125vw;
   }
 }
 
-.c-title--card {
+.c-title--front-card {
   font-family: "Roboto", sans-serif;
   color: white;
   padding-left: 10px;
@@ -279,17 +279,17 @@ ul, ol {
   font-size: 4.1rem;
 }
 @media screen and (min-width: 600px) {
-  .c-title--card {
+  .c-title--front-card {
     font-size: 4.4rem;
   }
 }
 @media screen and (min-width: 1025px) {
-  .c-title--card {
+  .c-title--front-card {
     font-size: 8rem;
   }
 }
 
-.c-title--card__item {
+.c-title--front-card__item {
   text-align: left;
   color: #3C2A10;
   font-size: 2.2rem;
@@ -298,7 +298,7 @@ ul, ol {
   margin-left: 10px;
 }
 @media screen and (min-width: 600px) {
-  .c-title--card__item {
+  .c-title--front-card__item {
     font-size: 2.4rem;
   }
 }
@@ -507,7 +507,7 @@ body.is-open {
   position: fixed;
 }
 
-.p-box__front {
+.p-front-box {
   display: flex;
   align-items: center;
   width: 100vw;
@@ -517,14 +517,14 @@ body.is-open {
   background-size: cover;
 }
 @media screen and (min-width: 600px) {
-  .p-box__front {
+  .p-front-box {
     background-image: url(../../../img/front-page/front-page_main_title_img_pc1.jpg);
     width: 100vw;
     height: 285px;
   }
 }
 @media screen and (min-width: 1025px) {
-  .p-box__front {
+  .p-front-box {
     width: 80.8854166667vw;
     height: 530px;
   }
@@ -553,21 +553,21 @@ body.is-open {
   }
 }
 
-.p-card {
+.p-front-card {
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 @media screen and (min-width: 600px) {
-  .p-card {
+  .p-front-card {
     flex-direction: row;
     justify-content: center;
     align-items: stretch;
   }
 }
 
-.p-card__left {
+.p-front-card__left {
   position: relative;
   background-image: url(../../../img/front-page/front-page_card_img_left.png);
   width: 89.3333333333vw;
@@ -576,21 +576,21 @@ body.is-open {
   background-size: cover;
 }
 @media screen and (min-width: 600px) {
-  .p-card__left {
+  .p-front-card__left {
     width: 42.8057553957vw;
     height: 681px;
     margin-right: 20px;
   }
 }
 @media screen and (min-width: 1025px) {
-  .p-card__left {
+  .p-front-card__left {
     width: 32.5520833333vw;
     height: 1193px;
     margin-right: 40px;
   }
 }
 
-.p-card__right {
+.p-front-card__right {
   position: relative;
   background-image: url(../../../img/front-page/front-page_card_img_right.png);
   width: 89.3333333333vw;
@@ -600,7 +600,7 @@ body.is-open {
   margin-top: 16px;
 }
 @media screen and (min-width: 600px) {
-  .p-card__right {
+  .p-front-card__right {
     width: 42.8057553957vw;
     height: 681px;
     margin-left: 20px;
@@ -608,7 +608,7 @@ body.is-open {
   }
 }
 @media screen and (min-width: 1025px) {
-  .p-card__right {
+  .p-front-card__right {
     width: 32.5520833333vw;
     height: 1193px;
     margin-left: 40px;
@@ -616,7 +616,7 @@ body.is-open {
   }
 }
 
-.p-card__unit {
+.p-front-card__unit {
   position: absolute;
   top: 45%;
   left: 0;
@@ -626,12 +626,12 @@ body.is-open {
   align-items: center;
 }
 @media screen and (min-width: 1025px) {
-  .p-card__unit {
+  .p-front-card__unit {
     top: 68%;
   }
 }
 
-.p-card__item {
+.p-front-card__item {
   text-align: center;
   overflow-y: hidden;
   position: relative;
@@ -641,19 +641,19 @@ body.is-open {
   height: 163px;
 }
 @media screen and (min-width: 600px) {
-  .p-card__item {
+  .p-front-card__item {
     width: 40.0479616307vw;
     height: 172px;
   }
 }
 @media screen and (min-width: 1025px) {
-  .p-card__item {
+  .p-front-card__item {
     width: 30.46875vw;
     height: 174px;
   }
 }
 
-.p-card__item__comment {
+.p-front-card__item__comment {
   display: inline-block;
   text-align: left;
   overflow-x: hidden;
@@ -663,12 +663,12 @@ body.is-open {
   margin-top: 20px;
 }
 @media screen and (min-width: 600px) {
-  .p-card__item__comment {
+  .p-front-card__item__comment {
     width: 36.9304556355vw;
   }
 }
 @media screen and (min-width: 1025px) {
-  .p-card__item__comment {
+  .p-front-card__item__comment {
     margin-top: 26px;
     width: 28.125vw;
   }

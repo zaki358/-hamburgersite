@@ -2,7 +2,7 @@
 @use "../../foundation/function";
 @use "../../foundation/variables";
 
-.p-box__front {
+.p-front-box {
     display            : flex;
     align-items        : center;
     width              : function.svw(375);

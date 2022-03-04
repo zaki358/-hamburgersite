@@ -2,7 +2,7 @@
 @use "../../foundation/function";
 @use "../../foundation/variables";
 
-.p-card {
+.p-front-card {
     position      : relative;
     display       : flex;
     flex-direction: column;
@@ -14,7 +14,7 @@
     }
 }
 
-.p-card__left {
+.p-front-card__left {
     position           : relative;
     background-image   : url(../../../img/front-page/front-page_card_img_left.png);
     width              : function.svw(335);
@@ -33,7 +33,7 @@
     }
 }
 
-.p-card__right {
+.p-front-card__right {
     position           : relative;
     background-image   : url(../../../img/front-page/front-page_card_img_right.png);
     width              : function.svw(335);
@@ -55,7 +55,7 @@
     }
 }
 
-.p-card__unit {
+.p-front-card__unit {
     position      : absolute;
     top           : 45%;
     left          : 0;
@@ -70,7 +70,7 @@
     }
 }
 
-.p-card__item {
+.p-front-card__item {
     text-align      : center;
     overflow-y      : hidden;
     position        : relative;
@@ -88,7 +88,7 @@
     }
 }
 
-.p-card__item__comment {
+.p-front-card__item__comment {
     display   : inline-block;
     text-align: left;
     overflow-x: hidden;
