@@ -33,8 +33,10 @@
 // -----------------------------------------------------------------
 @use "object/project/header" as project;
 @use "object/project/menu" ;
-@use "object/project/box" ;
-@use "object/project/card" ;
+@use "object/project/front-box" ;
+@use "object/project/front-card" ;
+@use "object/project/archive-box" ;
+@use "object/project/archive-card" ;
 @use "object/project/map" ;
 
 // -----------------------------------------------------------------
