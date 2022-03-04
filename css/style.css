@@ -151,12 +151,12 @@ ul, ol {
   }
 }
 
-#l-article {
+#l-main {
   display: flex;
   flex-direction: column;
 }
 @media screen and (min-width: 1025px) {
-  #l-article {
+  #l-main {
     grid-row: 2;
     grid-column: 1;
   }
@@ -507,24 +507,47 @@ body.is-open {
   position: fixed;
 }
 
-.p-box {
+.p-box__front {
   display: flex;
   align-items: center;
   width: 100vw;
   height: 285px;
-  background-image: url(../../../img/main/main_title_img_sp2.jpg);
+  background-image: url(../../../img/front-page/front-page_main_title_img_sp2.jpg);
   background-position: center center;
   background-size: cover;
 }
 @media screen and (min-width: 600px) {
-  .p-box {
-    background-image: url(../../../img/main/main_title_img_pc1.jpg);
+  .p-box__front {
+    background-image: url(../../../img/front-page/front-page_main_title_img_pc1.jpg);
     width: 100vw;
     height: 285px;
   }
 }
 @media screen and (min-width: 1025px) {
-  .p-box {
+  .p-box__front {
+    width: 80.8854166667vw;
+    height: 530px;
+  }
+}
+
+.p-box__archive {
+  display: flex;
+  align-items: center;
+  width: 100vw;
+  height: 285px;
+  background-image: url(../../../img/main/front-page_main_title_img_sp2.jpg);
+  background-position: center center;
+  background-size: cover;
+}
+@media screen and (min-width: 600px) {
+  .p-box__archive {
+    background-image: url(../../../img/main/front-page_main_title_img_pc1.jpg);
+    width: 100vw;
+    height: 285px;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .p-box__archive {
     width: 80.8854166667vw;
     height: 530px;
   }
@@ -546,7 +569,7 @@ body.is-open {
 
 .p-card__left {
   position: relative;
-  background-image: url(../../../img/main/front-page_card_img_left.png);
+  background-image: url(../../../img/front-page/front-page_card_img_left.png);
   width: 89.3333333333vw;
   height: 642px;
   background-position: center center;
@@ -569,7 +592,7 @@ body.is-open {
 
 .p-card__right {
   position: relative;
-  background-image: url(../../../img/main/front-page_card_img_right.png);
+  background-image: url(../../../img/front-page/front-page_card_img_right.png);
   width: 89.3333333333vw;
   height: 642px;
   background-position: center center;
