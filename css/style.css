@@ -429,7 +429,7 @@ ul, ol {
   color: #707070;
 }
 
-.c-link--card {
+.c-link--front-card {
   display: inline-block;
   text-decoration: none;
   margin-left: 10px;
@@ -748,12 +748,44 @@ body.is-open {
   height: 395px;
   color: #3C2A10;
 }
+@media screen and (min-width: 600px) {
+  .p-archive-description {
+    height: 292px;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .p-archive-description {
+    width: 80.8854166667vw;
+    height: 216px;
+  }
+}
+
 .p-archive-description__text {
   overflow-x: hidden;
   overflow-y: hidden;
   margin-top: 30px;
-  width: 89.3333333333vw;
   height: 276px;
+  font-size: 1.6rem;
+}
+@media screen and (min-width: 600px) {
+  .p-archive-description__text {
+    height: 145px;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .p-archive-description__text {
+    height: 70px;
+  }
+}
+
+.p-archive-card__item {
+  background-color: #3C2B1C;
+  padding-top: 30px;
+  padding-bottom: 40px;
+  padding-left: 4.2666666667vw;
+  padding-right: 19.2vw;
+  height: 360px;
+  width: 89.6vw;
 }
 .p-map {
   position: relative;

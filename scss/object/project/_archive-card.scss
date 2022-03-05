@@ -1,3 +1,17 @@
 @use "../../foundation/mixin";
 @use "../../foundation/function";
 @use "../../foundation/variables";
+
+
+.p-archive-card__item{
+    position         : relative;
+    background-color : #3C2B1C;
+    padding-top      : 30px;
+    padding-bottom   : 40px;
+    padding-left     : function.svw(16);
+    padding-right    : function.svw(72);
+    height           : 360px;
+    width            : function.svw(336);
+    @include mixin.media("tab"){}
+    @include mixin.media("pc")
+}

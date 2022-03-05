@@ -7,16 +7,26 @@
     width  : 100vw;
     height : 395px;
     color  : #3C2A10;
-    @include mixin.media("tab") {}
-    @include mixin.media("pc") {}
+    @include mixin.media("tab") {
+        height : 292px;
+    }
+    @include mixin.media("pc") {
+        width :function.pvw(1553);
+        height : 216px;
+    }
 }
 
 .p-archive-description__text {
     overflow-x: hidden;
     overflow-y: hidden;
     margin-top: 30px;
-    width     : function.svw(335);
+    //width     : function.svw(335);
     height    : 276px;
-    @include mixin.media("tab") {}
-    @include mixin.media("pc") {}
+    font-size: 1.6rem;
+    @include mixin.media("tab") {
+        height    : 145px;
+    }
+    @include mixin.media("pc") {
+        height    : 70px;
+    }
 }
