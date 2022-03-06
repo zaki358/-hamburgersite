@@ -3,7 +3,7 @@
 @use "../../foundation/variables";
 
 
-.u-margin--card {
+.u-margin--card--front {
     margin: 20px 0;
     @include mixin.media("tab") {
         margin: 40px 0;
