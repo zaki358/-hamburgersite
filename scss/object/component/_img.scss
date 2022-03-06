@@ -3,7 +3,7 @@
 @use "../../foundation/variables";
 @use "sass:math";
 
-.c-img--archive-card{
+.c-img--card--archive {
     display        : inline-block;
     object-fit     : cover;
     object-position: left;

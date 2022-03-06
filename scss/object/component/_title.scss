@@ -120,7 +120,7 @@
     font-size: 1.4rem;
 }
 
-.c-title--archive-box{
+.c-title--box--archive {
     font-family: "Roboto", sans-serif;
     font-size  : 3.6rem;
     @include mixin.media("tab") {
@@ -131,14 +131,14 @@
 
 }
 
-.c-title--archive-box__text {
+.c-title--box__text--archive {
     font-size  : 1.6rem;
     font-weight: bold;
     @include mixin.media("tab") {}
     @include mixin.media("pc") {}
 }
 
-.c-title--archive-description {
+.c-title--description--archive {
     font-size  : 2.8rem;
     font-weight: bold;
     @include mixin.media("tab") {
@@ -147,7 +147,7 @@
     @include mixin.media("pc") {}
 }
 
-.c-title--archive-card__menu {
+.c-title--card__menu--archive {
     color      : white;
     font-weight: bold;
     font-size  : 2.0rem;
@@ -158,7 +158,7 @@
     }
 }
 
-.c-title--archive-card__text {
+.c-title--card__text--archive {
     margin-top : 30px;
     color      : white;
     font-weight: bold;

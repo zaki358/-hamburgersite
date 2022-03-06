@@ -3,7 +3,11 @@
 @use "../../foundation/variables";
 @use "sass:math";
 
-.p-archive-card__body {
+.p-card--archive {
+    position: relative;
+}
+
+.p-card__body--archive {
     display        : flex;
     flex-direction : column;
     align-items    : center;
@@ -16,16 +20,13 @@
         height         : 354px;
     }
     @include mixin.media("pc") {
-        
         width : function.pvw(1353);
         height: 470px;
         //height: calc(function.pvw(1353) * 0.35);
     }
-    
-
 }
 
-.p-archive-card__item {
+.p-card__item--archive {
     position         : relative;
     background-color : #3C2B1C;
     padding-top      : 30px;
@@ -49,7 +50,7 @@
     }
 }
 
-.p-p-archive-card__text {
+.p-card__text-archive {
     overflow  : hidden;
     color     : white;
     font-size : 1.6rem;
