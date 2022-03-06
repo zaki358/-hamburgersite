@@ -72,3 +72,24 @@ img/archive/archive_card_img_pc.png
                 <button class="c-btn--menu js-menu--close"><img src="../../../img/sidebar_menu_btn_icon.svg"></button>
             </nav>
         </aside>
+
+
+ <div class="nav-links">
+                <a class="prev page-numbers" href="https://techacademy.jp/magazine/category/webdesign/"></a><!-- 現在の前のページへのリンク -->
+                <a class="page-numbers" href="https://techacademy.jp/magazine/category/webdesign/">1</a><!-- 1ページ目へのリンク -->
+                <span class="page-numbers current">2</span><!-- 現在閲覧しているページ(2ページ) -->
+                <a class="page-numbers" href="https://techacademy.jp/magazine/category/webdesign/page/3">3</a><!-- 3ページ目へのリンク -->
+                <span class="page-numbers dots">…</span><!-- ...の部分 -->
+                <a class="page-numbers" href="https://techacademy.jp/magazine/category/webdesign/page/27">27</a><!-- 27ページ目(最後のページ)へのリンク -->
+                <a class="next page-numbers" href="https://techacademy.jp/magazine/category/webdesign/page/3">»</a><!-- 現在の次のページへのリンク -->
+              </div>
+
+
+
+            <ul class="example2">
+                <li>前へ</li>
+                <li class="this">1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>次へ</li>
+            </ul>
