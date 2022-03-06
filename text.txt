@@ -1,3 +1,5 @@
+img/archive/archive_card_img_pc.png
+
 .l-header {
     overflow: hidden;
     background-color: #fff7ef;
