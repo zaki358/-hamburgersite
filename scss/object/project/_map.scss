@@ -5,14 +5,37 @@
 .p-map {
     //text-align: center;
     position  : relative;
-    overflow-y: hidden;
+    //overflow-y: hidden;
     width     : 100%;
-    height    : 690px;
+    //height    : 690px;
+    //height: auto;
+    //min-height: 690px;
+    //height: 100%;
     @include mixin.media("tab") {
-        height: 415px;
+        //height: 415px;
+        //min-height: 451px;
     }
     @include mixin.media("pc") {
-        height: 650px;
+        //height: 650px;
+        //min-height: 650px;
+    }
+    &::before{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 50;
+        background-color: rgba($color: #000000, $alpha: 0.5);
+        height: 100%;
+        //min-height: 50%;
+        //height: auto;
+        width : 100%;
+        @include mixin.media("tab") {
+            display: none;
+        }
+        @include mixin.media("pc") {
+            display: none;
+        }
     }
 }
 
@@ -22,7 +45,7 @@
     left            : 0;
     z-index         : 100;
     background-color: rgba($color: #000000, $alpha: 0.5);
-    height: 100%;
+    height: 50%;
     width : 100%;
     @include mixin.media("tab") {
         height: 100%;
@@ -32,6 +55,7 @@
         height: 100%;
         width : function.pvw(950);
     }
+    
 }
 
 .p-map__comment {
@@ -42,6 +66,7 @@
     font-size : 1.4rem;
     width     : function.svw(295);
     margin-top: 20px;
+    padding-bottom: 30px;
     @include mixin.media("tab") {
         width: function.tvw(763);
     }
