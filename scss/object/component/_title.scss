@@ -139,8 +139,8 @@
 }
 
 .c-title--description--archive {
-    font-size  : 2.8rem;
-    font-weight: bold;
+    font-size    : 2.8rem;
+    font-weight  : bold;
     @include mixin.media("tab") {
         font-size: 3.6rem;
     }
@@ -148,6 +148,7 @@
 }
 
 .c-title--card__menu--archive {
+    text-align : left;
     color      : white;
     font-weight: bold;
     font-size  : 2.0rem;
@@ -159,6 +160,7 @@
 }
 
 .c-title--card__text--archive {
+    text-align : left;
     margin-top : 30px;
     color      : white;
     font-weight: bold;
@@ -167,7 +169,5 @@
     }
     @include mixin.media("pc") {
         font-size  : 2.4rem;
-        
-        
     }
 }

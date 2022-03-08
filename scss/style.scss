@@ -28,6 +28,8 @@
 @use "object/component/link";
 @use "object/component/layer";
 @use "object/component/img";
+@use "object/component/icon";
+@use "object/component/text";
 
 // -----------------------------------------------------------------
 // Project
@@ -38,6 +40,8 @@
 @use "object/project/card" ;
 @use "object/project/description" ;
 @use "object/project/map" ;
+@use "object/project/pagination" ;
+
 
 // -----------------------------------------------------------------
 // Utility

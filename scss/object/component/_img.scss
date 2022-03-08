@@ -12,11 +12,13 @@
     @include mixin.media("tab") {
         object-fit     : cover;
         object-position: left ;
-        width: 50%;
-        height: 100%;
+        width          : 50%;
+        height         : 100%;
     }
     @include mixin.media("pc") {
-        width : 50%;
-        height: 100%;
+        width     : 50%;
+        height    : 100%;
+        min-height: 100%;
+        //height: auto;
     }
 }

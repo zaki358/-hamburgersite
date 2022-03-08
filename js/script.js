@@ -12,7 +12,7 @@ jQuery(function ($) {
 		$(".c-layer--sidebar").removeClass("is-open");
 	});
 
-	$(window).on('resize', function () {
+	$(window).on('load resize', function () {
 		let commentHeight = $(".p-map__comment").outerHeight();
 		let titleHeight = $(".c-title--map").outerHeight();
 		let borderHeight = $(".c-title--map__border--white").outerHeight();

@@ -20,17 +20,23 @@
         height  : 100%;
         width   : 100%;
     }
-    .p-menu__list {
-        margin-top  : 40px;
-        padding-left: 40px;
-    }
+    
+
     &.is-open{
         left: (100%-87%);
         @include mixin.media("tab"){
             left:(100%-44%);
-        } 
+        }
     }
 }
+
+.p-menu__list{}
+
+.p-menu__lv2 {
+    margin-top  : 40px;
+    padding-left: 40px;
+}
+
 body.is-open {
 	position: fixed;
 }

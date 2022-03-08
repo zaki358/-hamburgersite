@@ -14,8 +14,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
-    <script src="js/jquery-3.6.0.min.js"></script>
-    <script src="js/script.js"></script>
 </head>
 
 <body>
@@ -39,9 +37,9 @@
                 <!--projectで使用の場合  p-menu--sidebar__title-->
                 <h2 class="c-title--sidebar">Menu</h2>
                 <!--projectで使用の場合  p-menu__title-->
-                <ul>
-                    <li class="c-title--menu">バーガー</li>
-                    <ul class="p-menu__list">
+                <ul class="p-menu__list">
+                    <li class="p-menu__list__item c-title--menu">バーガー</li>
+                    <ul class="p-menu__lv2">
                         <li class="c-list--menu__text"><a href="" class="c-link--menu">ハンバーガー</a></li>
                         <li class="c-list--menu__text"><a href="" class="c-link--menu">チーズバーガー</a></li>
                         <li class="c-list--menu__text"><a href="" class="c-link--menu">テリヤキバーガー</a></li>
@@ -49,16 +47,16 @@
                         <li class="c-list--menu__text"><a href="" class="c-link--menu">フィッシュバーガー</a></li>
                         <li class="c-list--menu__text"><a href="" class="c-link--menu">ベーコンバーガー</a></li>
                         <li class="c-list--menu__text"><a href="" class="c-link--menu">チキンバーガー</a></li>
-                    </ul class="p-menu__list">
+                    </ul>
                     <li class="c-title--menu">サイド</li>
-                    <ul class="p-menu__list">
+                    <ul class="p-menu__lv2">
                         <li class="c-list--menu__text"><a href="" class="c-link--menu">ポテト</a></li>
                         <li class="c-list--menu__text"><a href="" class="c-link--menu">サラダ</a></li>
                         <li class="c-list--menu__text"><a href="" class="c-link--menu">ナゲット</a></li>
                         <li class="c-list--menu__text"><a href="" class="c-link--menu">コーン</a></li>
                     </ul>
                     <li class="c-title--menu">ドリンク</li>
-                    <ul class="p-menu__list">
+                    <ul class="p-menu__lv2">
                         <li class="c-list--menu__text"><a href="" class="c-link--menu">コーラ</a></li>
                         <li class="c-list--menu__text"><a href="" class="c-link--menu">ファンタ</a></li>
                         <li class="c-list--menu__text"><a href="" class="c-link--menu">オレンジ</a></li>
@@ -73,12 +71,10 @@
         </aside>
 
         <main id="l-main">
-
             <div class="p-box--front">
                 <h2 class="c-title--box--front">ダミーページ</h2>
             </div>
             <article class="p-card--front u-margin--card--front">
-
                 <section class="p-card__left--front">
                     <h3 class="c-title--card--front">Take Out</h3>
                     <a class="c-link--card--front" href=""></a>
@@ -90,8 +86,6 @@
                                 当店のテイクアウトで利用できる商品を掲載しています。当店のテイクアウトで利用できる商品を掲載しています。
                                 当店のテイクアウトで利用できる商品を掲載しています。当店のテイクアウトで利用できる商品を掲載しています。
                                 当店のテイクアウトで利用できる商品を掲載しています。当店のテイクアウトで利用できる商品を掲載しています。
-                                
-
                             </p>
                         </div>
                         <div class="p-card__item--front">
@@ -127,8 +121,6 @@
                     </div>
                 </section>
             </article>
-
-
             <div class="p-map">
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d810.4467390612969!2d139.69953485422212!3d35.65762021588669!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188b582cd0c9e1%3A0x421229897570ac48!2z5riL6LC36aeFIOilv-WPo-OBv-OBqeOCiuOBrueqk-WPow!5e0!3m2!1sja!2sjp!4v1646229340058!5m2!1sja!2sjp"
@@ -154,8 +146,6 @@
                         テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
                         テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
                         テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
-                     
-                        
                     </p>
                 </div>
             </div>
@@ -167,7 +157,8 @@
         </footer>
 
     </div>
-    
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>

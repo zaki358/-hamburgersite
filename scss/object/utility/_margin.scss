@@ -41,3 +41,10 @@
         margin-right : function.pvw(100);
     }
 }
+
+.u-margin--pagination__list {
+    li:not(.p-pagination__unit) {
+        margin-left : 7.5px;
+        margin-right: 7.5px;
+    }
+}
