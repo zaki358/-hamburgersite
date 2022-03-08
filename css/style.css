@@ -949,7 +949,6 @@ body.is-open {
 }
 @media screen and (min-width: 600px) {
   .p-description__text--archive {
-    height: 145px;
     min-height: 145px;
   }
 }
@@ -1062,6 +1061,10 @@ body.is-open {
   color: #707070;
   font-size: 1.6rem;
   background-color: white;
+}
+.p-pagination__list li:nth-of-type(2) {
+  color: white;
+  background-color: #3C2B1C;
 }
 
 .p-pagination__unit {

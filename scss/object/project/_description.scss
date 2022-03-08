@@ -32,7 +32,7 @@
     height    : auto;
     font-size : 1.6rem;
     @include mixin.media("tab") {
-        height    : 145px;
+        //height    : 145px;
         min-height: 145px;
     }
     @include mixin.media("pc") {
