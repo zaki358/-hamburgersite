@@ -128,7 +128,6 @@
         margin-right: 20px;
     }
     @include mixin.media("pc") {}
-
 }
 
 .c-title--box__text--archive {
@@ -170,4 +169,25 @@
     @include mixin.media("pc") {
         font-size  : 2.4rem;
     }
+}
+
+.c-title--box--single {
+    color       : white;
+    font-size   : 3.6rem;
+    font-weight : bold;
+    padding-left: function.svw(25);
+    @include mixin.media("tab") {
+        padding-left: function.tvw(86);
+        font-size   : 6rem;
+    }
+    @include mixin.media("pc") {
+        font-size   : 6rem;
+        padding-left: function.pvw(87);
+        //padding-left: 85px;
+    }
+}
+
+.c-title--article__heading {
+    color      : #3C2A10;
+    font-weight: bold;
 }

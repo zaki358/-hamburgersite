@@ -1,0 +1,76 @@
+@use "../../foundation/mixin";
+@use "../../foundation/function";
+@use "../../foundation/variables";
+
+.p-article {
+    overflow-y: hidden;
+    height    : auto;
+}
+
+.p-article__heading--lv1 {
+    font-size: 2.8rem;
+
+    @include mixin.media("tab"){
+        font-size: 3.6rem;
+    }
+    @include mixin.media("pc"){
+        font-size: 3.6rem;
+    }
+}
+
+.p-article__heading--lv2 {
+    font-size: 2.4rem;
+    @include mixin.media("tab"){
+        font-size: 2.8rem;
+    }
+    @include mixin.media("pc"){
+        font-size: 2.8rem;
+    }
+}
+
+.p-article__heading--lv3 {
+    font-size: 2.0rem;
+    @include mixin.media("tab"){
+        font-size: 2.0rem;
+    }
+    @include mixin.media("pc"){
+        font-size: 2.0rem;
+    }
+}
+
+.p-article__heading--lv4 {
+    font-size: 2.0rem;
+    @include mixin.media("tab"){
+        font-size: 2.0rem;
+    }
+    @include mixin.media("pc"){
+        font-size: 2.0rem;
+    }
+}
+
+.p-article__heading--lv5 {
+    font-size: 2.0rem;
+    @include mixin.media("tab"){
+        font-size: 2.0rem;
+    }
+    @include mixin.media("pc"){
+        font-size: 2.0rem;
+    }
+}
+
+.p-article__text {
+    height   : auto;
+    font-size: 1.6rem;
+}
+
+.p-article__quote {
+    background-color: #F5F5F5;
+    font-size       : 1.6rem;
+    padding         : 30px 20px;
+    @include mixin.media("tab"){
+        padding: 50px;
+    }
+    @include mixin.media("pc"){
+        padding: 50px;
+    }
+}
