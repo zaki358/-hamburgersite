@@ -82,7 +82,6 @@ select {
 html {
   height: 100%;
   font-weight: 500;
-  overflow-y: hidden;
 }
 
 body {
@@ -91,7 +90,6 @@ body {
   min-height: 100%;
   height: 100%;
   font-size: 1.4rem;
-  overflow-x: hidden;
 }
 
 img {
@@ -716,6 +714,33 @@ body.is-open {
 @media screen and (min-width: 1025px) {
   .p-box__title--archive {
     left: 4.53125vw;
+  }
+}
+
+.p-box--single {
+  display: flex;
+  align-items: center;
+  width: 100vw;
+  height: 285px;
+  background-image: url(../../../img/single/single_main_title_img.jpg);
+  background-repeat: no-repeat;
+  background-position: center 40%;
+  background-size: 130%;
+}
+@media screen and (min-width: 600px) {
+  .p-box--single {
+    width: 100vw;
+    height: 500px;
+    background-size: 180%;
+    background-position: center 40%;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .p-box--single {
+    width: 80.8854166667vw;
+    height: 500px;
+    background-size: 100%;
+    background-position: center center;
   }
 }
 

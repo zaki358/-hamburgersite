@@ -4,13 +4,13 @@
 
 
 .c-btn--header {
+    //left            : 85%; //308 / 375//
     @include mixin.btn-reset;
     font-family     : "Roboto", sans-serif;
     display         : inline-block;
     position        : absolute;
     top             : 3%;
-    //left            : 85%; //308 / 375//
-    left            :function.svw(325); 
+    left            :function.svw(325);
     color           : #707070;
     font-size       : 20px;
     @include mixin.media("tab") {
