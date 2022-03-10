@@ -112,11 +112,6 @@ a:hover {
   opacity: 0.6;
 }
 
-ul, ol {
-  margin: 0;
-  padding: 0;
-}
-
 #l-container {
   height: 100vh;
   box-sizing: border-box;
@@ -239,7 +234,7 @@ ul, ol {
     color: #707070;
     font-size: 34px;
     display: inline-block;
-    margin-left: 46px;
+    margin-left: 40px;
     margin-top: 82px;
   }
 }
@@ -249,7 +244,6 @@ ul, ol {
   font-weight: bold;
   color: #707070;
   font-size: 24px;
-  margin-left: 46px;
   margin-top: 85px;
 }
 
@@ -649,8 +643,8 @@ ul, ol {
 }
 
 .p-menu__lv2 {
-  margin-top: 40px;
-  padding-left: 40px;
+  margin-top: 10px;
+  padding-left: 10px;
 }
 
 body.is-open {
