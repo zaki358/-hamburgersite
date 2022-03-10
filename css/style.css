@@ -1226,6 +1226,95 @@ body.is-open {
   }
 }
 
+.p-article__img {
+  width: 100%;
+}
+
+.p-article__unit--lv1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  overflow: hidden;
+  height: auto;
+}
+.p-article__unit--lv1 img {
+  -o-object-position: left top;
+     object-position: left top;
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 45%;
+  position: relative;
+  top: 0;
+}
+.p-article__unit--lv1 p {
+  width: 50%;
+  font-size: 1.6rem;
+}
+
+.p-article__unit--lv2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  overflow: hidden;
+  height: auto;
+}
+.p-article__unit--lv2 img {
+  -o-object-position: right top;
+     object-position: right top;
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 45%;
+  position: relative;
+  top: 0;
+}
+.p-article__unit--lv2 p {
+  width: 50%;
+  font-size: 1.6rem;
+}
+
+.p-group-img {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.p-group-img img {
+  width: 70.6666666667vw;
+}
+@media screen and (min-width: 600px) {
+  .p-group-img img {
+    width: 69.5443645084vw;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .p-group-img img {
+    width: 30.2083333333vw;
+  }
+}
+
+.p-group-img__item {
+  -o-object-fit: contain;
+     object-fit: contain;
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.p-group-img__item img {
+  width: 95vw;
+}
+@media screen and (min-width: 600px) {
+  .p-group-img__item img {
+    width: 43vw;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .p-group-img__item img {
+    width: 20vw;
+  }
+}
+
 .u-margin--card--front {
   margin: 20px 0;
 }
@@ -1285,23 +1374,23 @@ body.is-open {
 .u-margin--single {
   margin-top: 40px;
   margin-bottom: 40px;
-  margin-left: 2.6666666667vw;
-  margin-right: 2.6666666667vw;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 @media screen and (min-width: 600px) {
   .u-margin--single {
     margin-top: 70px;
     margin-bottom: 70px;
-    margin-left: 4.1966426859vw;
-    margin-right: 4.1966426859vw;
+    margin-left: 60px;
+    margin-right: 60px;
   }
 }
 @media screen and (min-width: 1025px) {
   .u-margin--single {
     margin-top: 70px;
     margin-bottom: 70px;
-    margin-left: 5.2083333333vw;
-    margin-right: 5.2083333333vw;
+    margin-left: 100px;
+    margin-right: 100px;
   }
 }
 /*# sourceMappingURL=style.css.map */

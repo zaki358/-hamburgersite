@@ -138,3 +138,37 @@ img/archive/archive_card_img_pc.png
                 <button class="c-btn--menu js-menu--close"><img src="../../../img/sidebar_menu_btn_icon.svg"></button>
             </nav>
         </aside>
+
+
+
+
+
+        .p-group-img__item {
+    object-fit: contain;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    //place-items: end center;
+    flex-wrap: wrap;
+    gap: 20px 16px;
+    @include mixin.media("tab"){
+    justify-content: space-around;    
+    //justify-content: stretch;
+    }
+    @include mixin.media("pc"){
+    }
+    img {
+        //margin: 0 auto;
+        width: function.svw(315);
+        flex-basis: 100%;
+        @include mixin.media("tab"){
+        width: function.tvw(320);
+        flex-basis: 45%;
+        }
+        @include mixin.media("pc"){
+        width: function.pvw(360);
+        flex-basis: 30%;
+        }
+    }
+}
