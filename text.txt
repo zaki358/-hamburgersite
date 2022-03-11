@@ -172,3 +172,28 @@ img/archive/archive_card_img_pc.png
         }
     }
 }
+
+
+.p-group-img__item {
+    object-fit: contain;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    //gap: 20px 1px;
+    @include mixin.media("tab"){
+    }
+    @include mixin.media("pc"){
+        //gap: 20px 1vw;
+    }
+    img {
+        width: 95vw;
+        @include mixin.media("tab"){
+        width: 43vw;
+        }
+        @include mixin.media("pc"){
+        width: 20vw;
+        //flex-basis: 30%;
+        }
+    }
+}

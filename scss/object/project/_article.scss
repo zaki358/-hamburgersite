@@ -4,82 +4,97 @@
 
 .p-article {
     overflow-y: hidden;
-    height    : auto;
+    height: auto;
 }
 
 .p-article__heading--lv1 {
+    margin-top: 30px;
     font-size: 2.8rem;
-
-    @include mixin.media("tab"){
+    @include mixin.media("tab") {
         font-size: 3.6rem;
     }
-    @include mixin.media("pc"){
+    @include mixin.media("pc") {
         font-size: 3.6rem;
     }
 }
 
+.p-article__text {
+    margin-top: 60px;
+    height: auto;
+    font-size: 1.6rem;
+}
+
 .p-article__heading--lv2 {
+    margin-top: 60px;
     font-size: 2.4rem;
-    @include mixin.media("tab"){
+    @include mixin.media("tab") {
         font-size: 2.8rem;
     }
-    @include mixin.media("pc"){
+    @include mixin.media("pc") {
         font-size: 2.8rem;
     }
 }
 
 .p-article__heading--lv3 {
-    font-size: 2.0rem;
-    @include mixin.media("tab"){
-        font-size: 2.0rem;
+    margin-top: 60px;
+    font-size: 2rem;
+    @include mixin.media("tab") {
+        font-size: 2rem;
     }
-    @include mixin.media("pc"){
-        font-size: 2.0rem;
+    @include mixin.media("pc") {
+        font-size: 2rem;
     }
 }
 
 .p-article__heading--lv4 {
-    font-size: 2.0rem;
-    @include mixin.media("tab"){
-        font-size: 2.0rem;
+    margin-top: 60px;
+    font-size: 2rem;
+    @include mixin.media("tab") {
+        font-size: 2rem;
     }
-    @include mixin.media("pc"){
-        font-size: 2.0rem;
+    @include mixin.media("pc") {
+        font-size: 2rem;
     }
 }
 
 .p-article__heading--lv5 {
-    font-size: 2.0rem;
-    @include mixin.media("tab"){
-        font-size: 2.0rem;
+    margin-top: 60px;
+    font-size: 2rem;
+    @include mixin.media("tab") {
+        font-size: 2rem;
     }
-    @include mixin.media("pc"){
-        font-size: 2.0rem;
+    @include mixin.media("pc") {
+        font-size: 2rem;
     }
-}
-
-.p-article__text {
-    height   : auto;
-    font-size: 1.6rem;
 }
 
 .p-article__quote {
-    background-color: #F5F5F5;
-    font-size       : 1.6rem;
-    padding         : 30px 20px;
-    @include mixin.media("tab"){
+    margin-top: 30px;
+    color: #3c2a10;
+    background-color: #f5f5f5;
+    font-size: 1.6rem;
+    padding: 30px 20px;
+    @include mixin.media("tab") {
         padding: 50px;
     }
-    @include mixin.media("pc"){
+    @include mixin.media("pc") {
         padding: 50px;
     }
 }
 
+.p-article__quote--shop {
+    display: inline-block;
+    padding-top: 30px;
+    quotes: "" "";
+}
+
 .p-article__img {
+    margin-top: 30px;
     width: 100%;
 }
 
 .p-article__unit--lv1 {
+    margin-top: 30px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -99,6 +114,7 @@
 }
 
 .p-article__unit--lv2 {
+    margin-top: 30px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -114,48 +130,5 @@
     p {
         width: 50%;
         font-size: 1.6rem;
-    }
-}
-
-.p-group-img {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    object-fit: contain;
-    img {
-        width: function.svw(265);
-        //width: 580px;
-    @include mixin.media("tab") {
-        //width: 360px;
-        width: function.tvw(580);
-    }
-    @include mixin.media("pc") {
-        //width: 360px;
-        width: function.pvw(580);
-    }
-    }
-}
-
-.p-group-img__item {
-    object-fit: contain;
-    overflow: hidden;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    //gap: 20px 1px;
-    @include mixin.media("tab"){
-    }
-    @include mixin.media("pc"){
-        //gap: 20px 1vw;
-    }
-    img {
-        width: 95vw;
-        @include mixin.media("tab"){
-        width: 43vw;
-        }
-        @include mixin.media("pc"){
-        width: 20vw;
-        //flex-basis: 30%;
-        }
     }
 }

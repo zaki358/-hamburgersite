@@ -73,9 +73,9 @@
 
         <main id="l-main">
             <div class="p-box--single">
-                <h1 class="c-title--box--single">h1 チーズバーガー</h1>
+                <h1 class="c-title--box">h1 チーズバーガー</h1>
             </div>
-            <div class="u-margin--single">
+            <div class="u-margin--article">
                 <article class="p-article">
                     <h2 class="p-article__heading--lv1 c-title--article__heading">見出しh2</h2>
                     <p class="p-article__text">
@@ -129,24 +129,24 @@
                     </section>
                 </article>
             </div>
-            <div class="p-group u-margin--single">
+            <div class="p-group u-margin--article">
 
                 <div class="p-group-img">
                     <img src="img/single/single_main_group_img_item.png" alt="">
                     <div class="p-group-img__item">
-                        <img src="img/single/single_main_group_img_item.png" alt="">
-                        <img src="img/single/single_main_group_img_item.png" alt="">
-                        <img src="img/single/single_main_group_img_item.png" alt="">
-                        <img src="img/single/single_main_group_img_item.png" alt="">
-                        <img src="img/single/single_main_group_img_item.png" alt="">
-                        <img src="img/single/single_main_group_img_item.png" alt="">
-                        <img src="img/single/single_main_group_img_item.png" alt="">
-                        <img src="img/single/single_main_group_img_item.png" alt="">
-                        <img src="img/single/single_main_group_img_item.png" alt="">
+                        <img  src="img/single/single_main_group_img_item.png" alt="">
+                        <img  src="img/single/single_main_group_img_item.png" alt="">
+                        <img  src="img/single/single_main_group_img_item.png" alt="">
+                        <img  src="img/single/single_main_group_img_item.png" alt="">
+                        <img  src="img/single/single_main_group_img_item.png" alt="">
+                        <img  src="img/single/single_main_group_img_item.png" alt="">
+                        <img  src="img/single/single_main_group_img_item.png" alt="">
+                        <img  src="img/single/single_main_group_img_item.png" alt="">
+                        <img  src="img/single/single_main_group_img_item.png" alt="">
                     </div>
                 </div>
 
-                <ol class="p-group__list">
+                <ol class="p-group__list--lv1">
                     <li>リストリストリスト</li>
                     <li>リストリストリスト</li>
                     <ol>
@@ -154,12 +154,12 @@
                         <li>リストリストリスト</li>
                     </ol>
                 </ol>
-                <ol>
+                <ol class="p-group__list--lv2">
                     <li>リストリストリスト</li>
                     <li>リストリストリスト</li>
                 </ol>
 
-                <ul style="list-style-type: none">
+                <ul class="p-group__list--lv3" style="list-style-type: none">
                     <li>リストリストリスト</li>
                     <li>リストリストリスト</li>
                     <ul style="list-style-type: none">
@@ -167,24 +167,25 @@
                         <li>リストリストリスト</li>
                     </ul>
                 </ul>
-                <ul style="list-style-type: none">
+                <ul class="p-group__list--lv4" style="list-style-type: none">
                     <li>リストリストリスト</li>
                     <li>リストリストリスト</li>
                 </ul>
 
                 <pre class="p-group__pre">
-                <code class="p-group__code">
-                    &lt;html&gt;
-                        &lt;head&gt;&lt;/head&gt;
-                        &lt;body&gt;&lt;/body&gt;
-                    &lt;/html&gt;
-                </code>
-            </pre>
+                    <code class="p-group__code">
 
-                <table class="p-group__table" border="1">
+
+    &lt;html&gt;
+        &lt;head&gt;&lt;/head&gt;
+        &lt;body&gt;&lt;/body&gt;
+    &lt;/html&gt;
+                    </code>
+                </pre>
+                <table class="p-group__table" >
                     <tr>
-                        <td>テーブル</td>
-                        <td>テーブル</td>
+                        <th class="p-group__table--left" align="left">テーブル</th>
+                        <th class="p-group__table--right" align="left">テーブル</th>
                     </tr>
                     <tr>
                         <td>テーブル</td>
@@ -199,6 +200,10 @@
                         <td>テーブル</td>
                     </tr>
                 </table>
+
+                <button class="p-group-__btn c-btn--group" type="button">ボタン</button>
+
+                <b class="p-group__bold">boldboldboldboldboldboldbold</b>
             </div>
 
         </main>
